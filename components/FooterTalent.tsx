@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState, ChangeEvent, FormEvent } from "react";
@@ -180,7 +181,7 @@ export default function FooterTalent() {
 
           <div className="relative h-[67vh] overflow-hidden bg-orange-400">
             <img
-              src="/flowers.png"
+              src="/flowers/flowers.png"
               alt="flowers"
               className="object-cover w-full h-full"
             />

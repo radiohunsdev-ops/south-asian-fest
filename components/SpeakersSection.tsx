@@ -51,6 +51,9 @@ function SpeakerCard({
         alt={name}
         fill
         priority={priority}
+        sizes="(max-width: 640px) 100vw, 
+         (max-width: 1024px) 50vw, 
+         33vw"
         className="object-cover"
       />
 
@@ -73,9 +76,7 @@ function SpeakerCard({
           {name}
         </h3>
         {role && (
-          <p className="text-[10px] sm:text-xs md:text-sm opacity-90">
-            {role}
-          </p>
+          <p className="text-[10px] sm:text-xs md:text-sm opacity-90">{role}</p>
         )}
       </div>
     </div>

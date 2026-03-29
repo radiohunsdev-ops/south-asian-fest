@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       <Hero
-        bgImage="/vsaf/sponser.jpg"
+        bgImage="/landing-page/sponser.webp"
         overlayImage="/vsaf/im2.png"
         subtitle="Sponsors"
         title={

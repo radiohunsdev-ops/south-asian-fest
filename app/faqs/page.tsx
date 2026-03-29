@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <Hero
-        bgImage="/vsaf/faq.jpg"
+        bgImage="/landing-page/faq.webp.jpg"
         overlayImage="/vsaf/im2.png"
         subtitle="FAQs"
         title={

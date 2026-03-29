@@ -46,7 +46,7 @@ export default function Hero({
             </p>
           )}
 
-          <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light leading-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+          <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light leading-23 text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
             {title}
           </h1>
         </div>

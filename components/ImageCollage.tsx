@@ -24,16 +24,19 @@ export default function ImageCollage({
 
   return (
     <div className="w-full h-[85vh] flex bg-white">
+      {/* Left big image */}
       <div className="relative w-[60%] h-full">
         <Image
           src={images[0].url}
           alt={images[0].alt || "image"}
           fill
+          sizes="(max-width: 768px) 100vw, 60vw"
           className="object-cover"
           priority
         />
       </div>
 
+      {/* Right side */}
       <div className="w-[40%] h-full">
         {!isGridLayout && (
           <div className="flex flex-col h-full">
@@ -43,6 +46,7 @@ export default function ImageCollage({
                   src={images[1].url}
                   alt={images[1].alt || "image"}
                   fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
                 />
               )}
@@ -53,12 +57,14 @@ export default function ImageCollage({
                   src={images[2].url}
                   alt={images[2].alt || "image"}
                   fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
                 />
               )}
             </div>
           </div>
         )}
+
         {isGridLayout && (
           <div className="grid grid-cols-2 grid-rows-2 h-full">
             {images.slice(1, 5).map((img) => (
@@ -67,6 +73,7 @@ export default function ImageCollage({
                   src={img.url}
                   alt={img.alt || "image"}
                   fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
                   className="object-cover"
                 />
               </div>

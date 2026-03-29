@@ -39,7 +39,7 @@ const VideoComponent = ({
   videoUrl,
   thumbnail,
   showBackground = true,
-  backgroundImage = "/bg.png",
+  backgroundImage = "/flowers/bg.webp",
   gradientFrom = "#f97316",
   gradientVia = "#fb923c",
   gradientTo = "#facc15",

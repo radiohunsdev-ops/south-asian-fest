@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState, ChangeEvent, FormEvent } from "react";
@@ -212,7 +213,7 @@ export default function Footer() {
 
           <div className="relative h-[55vh] overflow-hidden bg-orange-400">
             <img
-              src="/flowers.png"
+              src="/flowers/flowers.webp"
               alt="flowers"
               className="object-cover w-full h-full"
             />

@@ -129,7 +129,6 @@ function TimelineItem({
 
   return (
     <div ref={itemRef} className="relative pl-10">
-      {/* Connector line — grows downward when visible */}
       {!isLast && (
         <div
           className="absolute left-1.75 top-7 w-0.5 bg-teal-400"

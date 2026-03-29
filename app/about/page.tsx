@@ -17,7 +17,7 @@ const page = () => {
   return (
     <div>
       <Hero
-        bgImage="/about/about-main.jpg"
+        bgImage="/landing-page/about-main.webp"
         overlayImage="/about/about.png"
         subtitle="About Us"
         title={
@@ -45,7 +45,7 @@ const page = () => {
       />
       <FestivalSection
         leftImage="/bundeep.jpg"
-        bottomImage="/chidi.png"
+        bottomImage="/flowers/chidi.webp"
         title={`Community Profile`}
         description="The South Asian community in Ottawa is 75,000 strong. Extremely vibrant and affluent, South Asians are represented in professional ranks in the public and private sectors of the National Capital Region. South Asians make up the largest visible minority in Canada and their culture has a definite mainstream appeal with music, dance, arts, fashion and culinary delights among the favourites for all Canadians from coast to coast!"
         buttonText=""

@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       <Hero
-        bgImage="/home/landing.jpg"
+        bgImage="/landing-page/landing.webp"
         overlayImage="/home/flower.png"
         subtitle="Welcome"
         title={
@@ -47,7 +47,7 @@ export default function Home() {
       <SpeakersSection />
       <FestivalSection
         leftImage="/festival-left.jpg"
-        bottomImage="/chidi.png"
+        bottomImage="/flowers/chidi.webp"
         title={`TD Virtual \nSouthAsianFestival 2021`}
         description="In 2021, OSACA will conduct a virtual festival so that SAF can be held in a Covid safe manner. We believe this best reflects the values of OSACA to put the safety, health and well-being of the community and families first."
         buttonText="VSAF"
@@ -76,7 +76,7 @@ export default function Home() {
         title={`Thank you to \nour wonderful \nsponsors`}
         buttonText="Become a sponsor"
         buttonLink="/sponsor"
-        bottomImage="/chidi.png"
+        bottomImage="/flowers/chidi.webp"
         sponsors={[
           {
             type: "image",

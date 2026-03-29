@@ -77,7 +77,7 @@ export default function Details() {
         </div>
 
         <div className="relative h-full min-h-62.5 md:min-h-0">
-          <Image src="/down.png" alt="event" fill className="object-cover" />
+          <Image src="/flowers/down.webp" alt="event" fill className="object-cover" />
         </div>
       </div>
     </main>

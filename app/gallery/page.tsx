@@ -32,7 +32,7 @@ const page = () => {
   return (
     <div>
       <Hero
-        bgImage="/vsaf/g.jpg"
+        bgImage="/landing-page/gallery.webp"
         overlayImage="/vsaf/im2.png"
         subtitle="Gallery"
         title={
@@ -69,7 +69,7 @@ const page = () => {
         title={`Thank you to \nour wonderful \nsponsors`}
         buttonText="Find out more"
         buttonLink="/sponsors"
-        bottomImage="/chidi.png"
+        bottomImage="/flowers/chidi.webp"
         sponsors={[
           {
             type: "image",

@@ -9,7 +9,8 @@ const quattrocento = Quattrocento_Sans({
 });
 export const metadata: Metadata = {
   title: "South Asian Fest",
-  description: "Our annual event is the largest South Asian gathering in North America. Held during the Summer in the heart of downtown Ottawa, this Annual Festival is open to the public and attracts crowds from diverse cultural backgrounds.",
+  description:
+    "Our annual event is the largest South Asian gathering in North America. Held during the Summer in the heart of downtown Ottawa, this Annual Festival is open to the public and attracts crowds from diverse cultural backgrounds.",
 };
 
 export default function RootLayout({
@@ -18,9 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={quattrocento.variable}>
-      <Navbar />
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en"  className={quattrocento.variable}>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

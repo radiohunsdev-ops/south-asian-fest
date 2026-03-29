@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div>
       <Hero
-        bgImage="/vsaf/vsaf.jpg"
+        bgImage="/landing-page/vsaf.webp"
         overlayImage="/vsaf/im2.png"
         subtitle="VSAF 2021"
         title={
@@ -42,7 +42,7 @@ const page = () => {
       <SignupSection />
       <FestivalSection
         leftImage="/uu.jpg"
-        bottomImage="/chidi.png"
+        bottomImage="/flowers/chidi.webp"
         title={`Schedule`}
         description="This year’s festival will see online and radio competitions, with prizes for the best singing, dancing, music skills and art creations, among others. Judges include Ottawa community leaders and international luminaries."
         buttonText="Click to download schedule"

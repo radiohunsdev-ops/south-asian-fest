@@ -58,7 +58,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
@@ -68,18 +67,23 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ── Top Navbar Bar ── */}
       <div
         className={`fixed top-0 left-0 w-full z-40 transition-transform duration-300 ${
           show ? "translate-y-0" : "-translate-y-full"
-        } `}
+        }`}
       >
         <div className="flex items-center justify-between px-4 sm:px-6 lg:px-20 py-4">
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" width={160} height={40} />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={160}
+              height={40}
+              sizes="160px"
+              style={{ width: "auto", height: "auto" }}
+            />
           </Link>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex gap-6 text-white">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
@@ -99,7 +103,6 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Hamburger Button — z-50 so it sits above the overlay */}
           <button
             onClick={() => setMenuOpen(true)}
             className="md:hidden text-white z-50 relative"
@@ -110,15 +113,23 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ── Mobile Full-Screen Menu ── */}
       <div
         className={`fixed inset-0 z-50 bg-black transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Menu Header */}
         <div className="flex items-center justify-between px-6 py-5">
-          <Image src="/logo.png" alt="Logo" width={140} height={40} />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={160}
+              height={40}
+              sizes="160px"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </Link>
+
           <button
             onClick={() => setMenuOpen(false)}
             className="text-white"
@@ -128,7 +139,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Nav Links */}
         <div className="flex flex-col items-center justify-center h-[calc(100%-160px)] gap-8 text-xl text-white">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
@@ -149,7 +159,6 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* Social Icons */}
         <div className="flex justify-center gap-6 pb-10">
           {socialLinks.map(({ Icon, label, href }) => (
             <a
