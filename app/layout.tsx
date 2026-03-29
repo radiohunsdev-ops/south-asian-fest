@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Quattrocento_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import NextTopLoader from "nextjs-toploader";
 const quattrocento = Quattrocento_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -19,8 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en"  className={quattrocento.variable}>
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className={quattrocento.variable}>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <NextTopLoader color="#4b218f" height={3} showSpinner={false} />
         <Navbar />
         {children}
       </body>
