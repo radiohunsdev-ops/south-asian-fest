@@ -21,6 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={quattrocento.variable}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="L6YaseWDTwC3XRLgIz9gi0HcMMWNAIlKGSMZ4FitTrI"
+        />
+      </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <NextTopLoader color="#4b218f" height={3} showSpinner={false} />
         <Navbar />
