@@ -181,7 +181,7 @@ export default function FooterTalent() {
 
           <div className="relative h-[67vh] overflow-hidden bg-orange-400">
             <img
-              src="/flowers/flowers.png"
+              src="/flowers/flowers.webp"
               alt="flowers"
               className="object-cover w-full h-full"
             />

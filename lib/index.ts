@@ -119,7 +119,7 @@ export type Client = {
 };
 
 export const clients: Client[] = [
-  { name: "TD", logo: "/sponsers-new/td1.jpg", href: "https://www.td.com" },
+  { name: "TD", logo: "/sponsers-new/tdd.png", href: "https://www.td.com" },
   { name: "Fineqia", logo: "/sponsers-new/a5.jpg" },
   { name: "LIV", logo: "/sponsers-new/a6.png", href: "https://livapartments.com" },
   { name: "ottawa", logo: "/sponsers-new/a3.png", href: "https://livapartments.com" },
